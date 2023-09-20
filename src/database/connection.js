@@ -1,12 +1,13 @@
 import mysql2 from 'mysql2';
+import values from '../const/const.js';
 
 /* The `connectionConfig` object is storing the configuration details for connecting to a MySQL
 database. It includes the following properties: */
 const connectionConfig = {
-    host: 'localhost',
-    user: 'root',
+    host: values.HOST,
+    user: values.USER,
     // password: 'Informatica2022.-',
-    database: 'bdyweb'
+    database: values.DATABASE
 };
 /* The code is creating a connection to a MySQL database using the `mysql2` library. */
 
