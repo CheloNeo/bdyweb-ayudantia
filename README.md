@@ -44,7 +44,8 @@ Para utilizar este proyecto, sigue estos pasos:
    ```bash
    npm install
 
-   ```bash   
+4. Ejecutar el siguiente comando para arrancar el proyecto:
+    ```bash   
    npm run dev
 
 ¡Disfruta explorando este proyecto y aprendiendo más sobre base de datos y programación web!
