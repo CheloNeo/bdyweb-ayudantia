@@ -3,7 +3,7 @@ import path from 'path';
 import morgan from 'morgan';
 import express from 'express';
 
-import { STATIC_PATH, RUN_PORT, NODE_ENV } from './const/const.js';
+import value from './const/const.js';
 
 const app = express(); //crear instancia app
 
@@ -17,8 +17,8 @@ const corsOptions = {
 //archivo de la confiraciaona de bd 
 import './database/connection.js'
 
-app.set('env', NODE_ENV);
-app.set('port', RUN_PORT);
+app.set('env', value.NODE_ENV);
+app.set('port', value.RUN_PORT);
 
 app.use(morgan('dev'));
 app.use(cors(corsOptions));
@@ -26,7 +26,7 @@ app.use(express.json({limit: '500MB'}));
 app.use(express.urlencoded({extended:true}));
 
 //static folder
-app.use(express.static(path.join(path.resolve(), STATIC_PATH)));
+app.use(express.static(path.join(path.resolve(), value.STATIC_PATH)));
 
 
 //ENDPOINTs
