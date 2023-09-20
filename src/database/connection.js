@@ -1,10 +1,11 @@
 import mysql2 from 'mysql2';
+import values from '../const/const.js';
 
 const connectionConfig = {
-    host: 'localhost',
-    user: 'root',
+    host: values.HOST,
+    user: values.USER,
     // password: 'Informatica2022.-',
-    database: 'bdyweb'
+    database: values.DATABASE
 };
 
 const connection = mysql2.createConnection({
