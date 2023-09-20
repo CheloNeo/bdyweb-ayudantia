@@ -30,4 +30,20 @@ Este proyecto utiliza MySQL como base de datos. Para ejecutar correctamente la a
 
 Si experimentas problemas al ejecutar MySQL en XAMPP, te recomendamos detener todos los servicios de MySQL en tu máquina, ya que pueden causar conflictos de puertos con XAMPP. 🚧
 
+
+## Cómo ejecutar el proyecto
+
+Para utilizar este proyecto, sigue estos pasos:
+
+1. Descarga o clona el repositorio en tu computadora.
+
+2. Abre una terminal y navega hasta la carpeta del proyecto.
+
+3. Ejecuta el siguiente comando para instalar las dependencias:
+
+   ```bash
+   npm install
+
+   npm run dev
+
 ¡Disfruta explorando este proyecto y aprendiendo más sobre base de datos y programación web!
